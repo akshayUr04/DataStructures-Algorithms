@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"golang-dsa/tree"
 )
 
@@ -151,6 +152,7 @@ func main() {
 	// fmt.Println(tree)
 	// fmt.Println(tree.Search(10))
 	// fmt.Println(tree.Search(485))
-	tree.Delete(15)
+	// tree.Delete(15)
+	fmt.Println(tree.Bsf())
 
 }
