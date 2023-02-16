@@ -1,9 +1,13 @@
 package main
 
+import (
+	"golang-dsa/tree"
+)
+
 func main() {
 
-	// -----------------------------------------------Sorting----------------------------------------------------------
-	// arr := []int{14, 4, 7, 73, 54}
+	// -------------------------------------------------Sorting----------------------------------------------------------
+	// arr := []int{5, 4, 10, 2, 3}
 	// fmt.Println("array before sorting", arr)
 	// a := len(arr) - 1
 	// b := 0
@@ -15,7 +19,7 @@ func main() {
 	// fmt.Println("MergeSort sort", sorting.MergeSort(arr))
 	// fmt.Println(arr)
 
-	// -----------------------------------------------HashTable----------------------------------------------------------
+	// --------------------------------------------------HashTable----------------------------------------------------------
 
 	// testBucket := &hashtable.Bucket{}
 	// testBucket.BucketInsert("akshay")
@@ -38,7 +42,7 @@ func main() {
 	// fmt.Println(Hashtable.HashSearch("Akshay"))
 	// fmt.Println(Hashtable.HashSearch("Unni"))
 
-	// -----------------------------------------------Stack----------------------------------------------------------
+	// -------------------------------------------------------Stack----------------------------------------------------------
 
 	//Slice
 
@@ -79,7 +83,7 @@ func main() {
 	// fmt.Println("---------------")
 	// newStack.Display()
 
-	// -----------------------------------------------Queue----------------------------------------------------------
+	// --------------------------------------------------------Queue----------------------------------------------------------
 
 	//Slice
 
@@ -133,5 +137,20 @@ func main() {
 	// fmt.Println(circular)
 	// circular.Enqueue(15)
 	// fmt.Println(circular)
+
+	// ---------------------------------------------------Tree-------------------------------------------------------------------
+
+	tree := &tree.Tree{}
+	tree.Insert(10)
+	tree.Insert(15)
+	tree.Insert(11)
+	tree.Insert(8)
+	tree.Insert(13)
+	tree.Insert(19)
+	tree.Insert(18)
+	// fmt.Println(tree)
+	// fmt.Println(tree.Search(10))
+	// fmt.Println(tree.Search(485))
+	tree.Delete(15)
 
 }
