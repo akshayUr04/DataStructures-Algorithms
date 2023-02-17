@@ -144,16 +144,17 @@ func main() {
 	tree := &tree.Tree{}
 	tree.Insert(10)
 	tree.Insert(15)
-	tree.Insert(11)
+	tree.Insert(12)
 	tree.Insert(8)
 	tree.Insert(13)
 	tree.Insert(19)
 	tree.Insert(18)
+	tree.Insert(11)
 	// fmt.Println(tree)
 	// fmt.Println(tree.Search(10))
 	// fmt.Println(tree.Search(485))
 	// tree.Delete(15)
 	// fmt.Println(tree.Bsf())
-	fmt.Println(tree.BfsPreOrder())
-
+	// fmt.Println(tree.BfsPreOrder())
+	fmt.Println(tree.BfsPostOrder())
 }
