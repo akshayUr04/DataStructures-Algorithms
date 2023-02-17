@@ -153,6 +153,7 @@ func main() {
 	// fmt.Println(tree.Search(10))
 	// fmt.Println(tree.Search(485))
 	// tree.Delete(15)
-	fmt.Println(tree.Bsf())
+	// fmt.Println(tree.Bsf())
+	fmt.Println(tree.BfsPreOrder())
 
 }

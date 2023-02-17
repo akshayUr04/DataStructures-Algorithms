@@ -102,26 +102,3 @@ func (t *Tree) Search(val int) bool {
 func (t *Tree) Delete(val int) {
 	t.Root = t.Root.Delete(val)
 }
-
-func (t *Tree) Bsf() []int {
-	if t.Root == nil {
-		return []int{}
-	}
-	result := make([]int, 0)
-	queue := []*Node{t.Root}
-
-	for len(queue) > 0 {
-		curNode := queue[0]
-		queue = queue[1:]
-		result = append(result, curNode.Key)
-
-		if curNode.Left != nil {
-			queue = append(queue, curNode.Left)
-		}
-
-		if curNode.Right != nil {
-			queue = append(queue, curNode.Right)
-		}
-	}
-	return result
-}
