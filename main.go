@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang-dsa/tree"
+	"golang-dsa/heep"
 )
 
 func main() {
@@ -141,21 +141,31 @@ func main() {
 
 	// ---------------------------------------------------Tree-------------------------------------------------------------------
 
-	tree := &tree.Tree{}
-	tree.Insert(10)
-	tree.Insert(15)
-	tree.Insert(12)
-	tree.Insert(8)
-	tree.Insert(13)
-	tree.Insert(19)
-	tree.Insert(18)
-	tree.Insert(11)
-	// fmt.Println(tree)
+	// tree := &tree.Tree{}
+	// values := []int{10, 15, 12, 8, 13, 19, 18, 11}
+	// for _, val := range values {
+	// 	tree.Insert(val)
+	// }
 	// fmt.Println(tree.Search(10))
 	// fmt.Println(tree.Search(485))
 	// tree.Delete(15)
 	// fmt.Println(tree.Bsf())
 	// fmt.Println(tree.BfsPreOrder())
 	// fmt.Println(tree.BfsPostOrder())
-	fmt.Println(tree.BfsInorder())
+	// fmt.Println(tree.BfsInorder())
+
+	// ---------------------------------------------------Heap-------------------------------------------------------------------
+
+	maxHeap := &heep.MaxHeap{}
+	values := []int{10, 23, 45, 73, 86, 19, 36, 5}
+	for _, val := range values {
+		maxHeap.Insert(val)
+	}
+	fmt.Println(maxHeap)
+	fmt.Println("--------------")
+	for i := 0; i <= 5; i++ {
+		maxHeap.Extract()
+		fmt.Println(maxHeap)
+	}
+
 }

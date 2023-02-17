@@ -1,7 +1,5 @@
 package tree
 
-import "fmt"
-
 type Node struct {
 	Left  *Node
 	Key   int
@@ -44,17 +42,12 @@ func (n *Node) Delete(val int) *Node {
 	if n == nil {
 		return nil
 	}
-	fmt.Println("node", *n)
 
 	//search for the node to dlt
-	fmt.Println(n.Key)
 	if val < n.Key {
-		n.Left = n.Left.Delete(val)
-		fmt.Println("nL", *n)
 		return n
 	} else if val > n.Key {
 		n.Right = n.Right.Delete(val)
-		fmt.Println("nR", *n)
 		return n
 	}
 
@@ -73,7 +66,6 @@ func (n *Node) Delete(val int) *Node {
 	// if the node has 2 child node find the successor node
 	successor := n.Right
 	for successor.Left != nil {
-		fmt.Println(successor.Key)
 		successor = successor.Left
 	}
 
