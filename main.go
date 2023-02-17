@@ -156,5 +156,6 @@ func main() {
 	// tree.Delete(15)
 	// fmt.Println(tree.Bsf())
 	// fmt.Println(tree.BfsPreOrder())
-	fmt.Println(tree.BfsPostOrder())
+	// fmt.Println(tree.BfsPostOrder())
+	fmt.Println(tree.BfsInorder())
 }
