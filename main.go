@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golang-dsa/heep"
-)
+import "golang-dsa/graph"
 
 func main() {
 
@@ -168,12 +165,26 @@ func main() {
 	// 	fmt.Println(maxHeap)
 	// }
 
-	minHeap := &heep.MinHeap{}
-	values := []int{10, 23, 45, 73, 86, 19, 36, 5}
-	for _, val := range values {
-		minHeap.Insert(val)
+	// minHeap := &heep.MinHeap{}
+	// values := []int{10, 23, 45, 73, 86, 19, 36, 5}
+	// for _, val := range values {
+	// 	minHeap.Insert(val)
+	// }
+	// fmt.Println(minHeap)
+	// fmt.Println(minHeap.Extract())
+	// fmt.Println(minHeap)
+
+	// ---------------------------------------------------Graph-------------------------------------------------------------------
+	graph := graph.Graph{}
+	for i := 0; i <= 5; i++ {
+		graph.AddVertex(i)
 	}
-	fmt.Println(minHeap)
-	fmt.Println(minHeap.Extract())
-	fmt.Println(minHeap)
+
+	graph.AddEdge(1, 2)
+	graph.AddEdge(1, 3)
+	graph.AddEdge(3, 4)
+	graph.AddEdge(3, 4)
+	graph.AddEdge(4, 5)
+	graph.AddEdge(5, 0)
+	graph.Print()
 }
