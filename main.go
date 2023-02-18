@@ -156,16 +156,24 @@ func main() {
 
 	// ---------------------------------------------------Heap-------------------------------------------------------------------
 
-	maxHeap := &heep.MaxHeap{}
+	// maxHeap := &heep.MaxHeap{}
+	// values := []int{10, 23, 45, 73, 86, 19, 36, 5}
+	// for _, val := range values {
+	// 	maxHeap.Insert(val)
+	// }
+	// fmt.Println(maxHeap)
+	// fmt.Println("--------------")
+	// for i := 0; i <= 5; i++ {
+	// 	maxHeap.Extract()
+	// 	fmt.Println(maxHeap)
+	// }
+
+	minHeap := &heep.MinHeap{}
 	values := []int{10, 23, 45, 73, 86, 19, 36, 5}
 	for _, val := range values {
-		maxHeap.Insert(val)
+		minHeap.Insert(val)
 	}
-	fmt.Println(maxHeap)
-	fmt.Println("--------------")
-	for i := 0; i <= 5; i++ {
-		maxHeap.Extract()
-		fmt.Println(maxHeap)
-	}
-
+	fmt.Println(minHeap)
+	fmt.Println(minHeap.Extract())
+	fmt.Println(minHeap)
 }
