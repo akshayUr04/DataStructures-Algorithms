@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang-dsa/trie"
+	"golang-dsa/tree"
 )
 
 func main() {
@@ -141,15 +141,15 @@ func main() {
 
 	// ---------------------------------------------------Tree-------------------------------------------------------------------
 
-	// tree := &tree.Tree{}
-	// values := []int{10, 15, 12, 8, 13, 19, 18, 11}
-	// for _, val := range values {
-	// 	tree.Insert(val)
-	// }
+	tree := &tree.Tree{}
+	values := []int{10, 15, 12, 8, 13, 19, 18, 11}
+	for _, val := range values {
+		tree.Insert(val)
+	}
 	// fmt.Println(tree.Search(10))
 	// fmt.Println(tree.Search(485))
 	// tree.Delete(15)
-	// fmt.Println(tree.Bsf())
+	fmt.Println(tree.Bsf())
 	// fmt.Println(tree.BfsPreOrder())
 	// fmt.Println(tree.BfsPostOrder())
 	// fmt.Println(tree.BfsInorder())
@@ -192,13 +192,13 @@ func main() {
 	// graph.Print()
 
 	// ---------------------------------------------------Trie-------------------------------------------------------------------
-	trie := trie.InitTrie()
+	// 	trie := trie.InitTrie()
 
-	trie.Insert("akshay")
-	trie.Insert("akshaya")
-	trie.Insert("akash")
-	trie.Insert("rahul")
-	fmt.Println(trie.Search("aksha"))
-	fmt.Println(trie.Search("akshaya"))
+	// 	trie.Insert("akshay")
+	// 	trie.Insert("akshaya")
+	// 	trie.Insert("akash")
+	// 	trie.Insert("rahul")
+	// 	fmt.Println(trie.Search("aksha"))
+	// 	fmt.Println(trie.Search("akshaya"))
 
 }

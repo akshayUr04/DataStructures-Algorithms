@@ -6,7 +6,6 @@ func (t *Tree) Bsf() []int {
 	}
 	result := make([]int, 0)
 	queue := []*Node{t.Root}
-
 	for len(queue) > 0 {
 		curNode := queue[0]
 		queue = queue[1:]
