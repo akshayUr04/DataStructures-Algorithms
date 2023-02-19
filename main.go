@@ -1,6 +1,9 @@
 package main
 
-import "golang-dsa/graph"
+import (
+	"fmt"
+	"golang-dsa/trie"
+)
 
 func main() {
 
@@ -175,16 +178,27 @@ func main() {
 	// fmt.Println(minHeap)
 
 	// ---------------------------------------------------Graph-------------------------------------------------------------------
-	graph := graph.Graph{}
-	for i := 0; i <= 5; i++ {
-		graph.AddVertex(i)
-	}
+	// graph := graph.Graph{}
+	// for i := 0; i <= 5; i++ {
+	// 	graph.AddVertex(i)
+	// }
 
-	graph.AddEdge(1, 2)
-	graph.AddEdge(1, 3)
-	graph.AddEdge(3, 4)
-	graph.AddEdge(3, 4)
-	graph.AddEdge(4, 5)
-	graph.AddEdge(5, 0)
-	graph.Print()
+	// graph.AddEdge(1, 2)
+	// graph.AddEdge(1, 3)
+	// graph.AddEdge(3, 4)
+	// graph.AddEdge(3, 4)
+	// graph.AddEdge(4, 5)
+	// graph.AddEdge(5, 0)
+	// graph.Print()
+
+	// ---------------------------------------------------Trie-------------------------------------------------------------------
+	trie := trie.InitTrie()
+
+	trie.Insert("akshay")
+	trie.Insert("akshaya")
+	trie.Insert("akash")
+	trie.Insert("rahul")
+	fmt.Println(trie.Search("aksha"))
+	fmt.Println(trie.Search("akshaya"))
+
 }
