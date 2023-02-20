@@ -1,7 +1,8 @@
 package main
 
 import (
-	"golang-dsa/graph"
+	"fmt"
+	"golang-dsa/heep"
 )
 
 func main() {
@@ -145,27 +146,29 @@ func main() {
 	// for _, val := range values {
 	// 	tree.Insert(val)
 	// }
-	// // fmt.Println(tree.Search(10))
-	// // fmt.Println(tree.Search(485))
-	// // tree.Delete(15)
-	// // fmt.Println(tree.Bsf())
+	// fmt.Println(tree.Search(10))
+	// fmt.Println(tree.Search(485))
+	// tree.Delete(15)
+	// fmt.Println(tree.Bsf())
 	// fmt.Println(tree.BfsPreOrder())
 	// fmt.Println(tree.BfsPostOrder())
 	// fmt.Println(tree.BfsInorder())
 
 	// ---------------------------------------------------Heap-------------------------------------------------------------------
 
-	// maxHeap := &heep.MaxHeap{}
-	// values := []int{10, 23, 45, 73, 86, 19, 36, 5}
-	// for _, val := range values {
-	// 	maxHeap.Insert(val)
-	// }
-	// fmt.Println(maxHeap)
-	// fmt.Println("--------------")
-	// for i := 0; i <= 5; i++ {
-	// 	maxHeap.Extract()
-	// 	fmt.Println(maxHeap)
-	// }
+	maxHeap := &heep.MaxHeap{}
+	arr := []int{10, 23, 45, 73, 86, 19, 36, 5}
+	for _, val := range arr {
+		maxHeap.Insert(val)
+	}
+	fmt.Println(maxHeap)
+	maxHeap.HeapSort(arr)
+	fmt.Println(arr)
+	fmt.Println("--------------")
+	for i := 0; i <= 5; i++ {
+		maxHeap.Extract()
+		fmt.Println(maxHeap)
+	}
 
 	// minHeap := &heep.MinHeap{}
 	// values := []int{10, 23, 45, 73, 86, 19, 36, 5}
@@ -177,19 +180,19 @@ func main() {
 	// fmt.Println(minHeap)
 
 	// ---------------------------------------------------Graph-------------------------------------------------------------------
-	graph := graph.Graph{}
-	for i := 0; i <= 5; i++ {
-		graph.AddVertex(i)
-	}
+	// graph := graph.Graph{}
+	// for i := 0; i <= 5; i++ {
+	// 	graph.AddVertex(i)
+	// }
 
-	graph.AddEdge(1, 2)
-	graph.AddEdge(1, 3)
-	graph.AddEdge(3, 4)
-	graph.AddEdge(4, 5)
-	graph.AddEdge(5, 0)
+	// graph.AddEdge(1, 2)
+	// graph.AddEdge(1, 3)
+	// graph.AddEdge(3, 4)
+	// graph.AddEdge(4, 5)
+	// graph.AddEdge(5, 0)
 	// graph.Print()
-	graph.Bfs(1)
-	graph.Dfs(1)
+	// graph.Bfs(1)
+	// graph.Dfs(1)
 	// ---------------------------------------------------Trie-------------------------------------------------------------------
 	// 	trie := trie.InitTrie()
 
