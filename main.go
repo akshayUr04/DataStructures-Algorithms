@@ -1,6 +1,8 @@
 package main
 
-import "golang-dsa/graph"
+import (
+	"golang-dsa/graph"
+)
 
 func main() {
 
@@ -187,6 +189,7 @@ func main() {
 	graph.AddEdge(5, 0)
 	// graph.Print()
 	graph.Bfs(1)
+	graph.Dfs(1)
 	// ---------------------------------------------------Trie-------------------------------------------------------------------
 	// 	trie := trie.InitTrie()
 
