@@ -1,12 +1,17 @@
 package main
 
-import (
-	"fmt"
-	"golang-dsa/heep"
-)
-
 func main() {
 
+	// -------------------------------------------------Recursion----------------------------------------------------------
+	// arr := []int{10, 15, 16, 17, 25, 62, 63}
+	// fmt.Println(recursion.Binary(arr, 17))
+
+	// fib := recursion.Fib(10)
+	// fmt.Println(fib)
+
+	// fmt.Println(recursion.Palindrome("malayalam"))
+
+	// fmt.Println(recursion.Reverse("akshay"))
 	// -------------------------------------------------Sorting----------------------------------------------------------
 	// arr := []int{5, 4, 10, 2, 3}
 	// fmt.Println("array before sorting", arr)
@@ -156,19 +161,19 @@ func main() {
 
 	// ---------------------------------------------------Heap-------------------------------------------------------------------
 
-	maxHeap := &heep.MaxHeap{}
-	arr := []int{10, 23, 45, 73, 86, 19, 36, 5}
-	for _, val := range arr {
-		maxHeap.Insert(val)
-	}
-	fmt.Println(maxHeap)
-	maxHeap.HeapSort(arr)
-	fmt.Println(arr)
-	fmt.Println("--------------")
-	for i := 0; i <= 5; i++ {
-		maxHeap.Extract()
-		fmt.Println(maxHeap)
-	}
+	// maxHeap := &heep.MaxHeap{}
+	// arr := []int{10, 23, 45, 73, 86, 19, 36, 5}
+	// for _, val := range arr {
+	// 	maxHeap.Insert(val)
+	// }
+	// // fmt.Println(maxHeap)
+	// maxHeap.HeapSort(arr)
+	// fmt.Println(arr)
+	// fmt.Println("--------------")
+	// for i := 0; i <= 5; i++ {
+	// 	maxHeap.Extract()
+	// 	fmt.Println(maxHeap)
+	// }
 
 	// minHeap := &heep.MinHeap{}
 	// values := []int{10, 23, 45, 73, 86, 19, 36, 5}

@@ -45,6 +45,7 @@ func (n *Node) Delete(val int) *Node {
 
 	//search for the node to dlt
 	if val < n.Key {
+		n.Left = n.Left.Delete(val)
 		return n
 	} else if val > n.Key {
 		n.Right = n.Right.Delete(val)
