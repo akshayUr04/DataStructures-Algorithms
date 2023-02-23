@@ -95,7 +95,7 @@ func (l *LinkedList) PrintList() {
 	}
 }
 
-func (l *LinkedList) deletewithValue(value int) {
+func (l *LinkedList) DeletewithValue(value int) {
 	if l.length == 0 {
 		return
 	}
@@ -171,7 +171,7 @@ func (l *LinkedList) DltFromPosition(pos int) {
 
 }
 
-func (l *LinkedList) lLargestValues(val LinkedList) {
+func (l *LinkedList) LargestValues(val LinkedList) {
 	temp := val.head.data
 	head := val.head
 

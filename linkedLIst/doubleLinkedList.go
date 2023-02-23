@@ -76,7 +76,7 @@ func (dl *DoubleLinkedList) DltAtEnd() {
 	dl.length--
 }
 
-func (dl *DoubleLinkedList) dltWithVal(val int) {
+func (dl *DoubleLinkedList) DltWithVal(val int) {
 	temp := dl.head
 	if temp == nil {
 		return
