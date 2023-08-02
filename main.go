@@ -8,7 +8,6 @@ func main() {
 
 	// fib := recursion.Fib(10)
 	// fmt.Println(fib)
-
 	// fmt.Println(recursion.Palindrome("malayalam"))
 
 	// fmt.Println(recursion.Reverse("akshay"))
@@ -120,6 +119,7 @@ func main() {
 	// newQueue.Display()
 
 	//Array
+
 	// queue := queue.Init(4)
 	// fmt.Println(queue)
 	// queue.Enqueue(10)
@@ -198,6 +198,7 @@ func main() {
 	// graph.Print()
 	// graph.Bfs(1)
 	// graph.Dfs(1)
+
 	// ---------------------------------------------------Trie-------------------------------------------------------------------
 	// 	trie := trie.InitTrie()
 
@@ -207,5 +208,4 @@ func main() {
 	// 	trie.Insert("rahul")
 	// 	fmt.Println(trie.Search("aksha"))
 	// 	fmt.Println(trie.Search("akshaya"))
-
 }
